@@ -13,11 +13,18 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* variabili colori */
+:root {
+    --light-blue: #b4d0e7;
+}
+
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
 }
+
+/* regole generali e comuni */
 
 a {
     text-decoration: none;
@@ -25,6 +32,11 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
 .btn {
@@ -38,6 +50,15 @@ ul {
 
 .col {
     float: left;
+}
+
+.cont-90 {
+    width: 90%;
+    margin: 0 auto;
+}
+.cont-80 {
+    width: 80%;
+    margin: 0 auto;
 }
 
 
@@ -57,6 +78,7 @@ ul {
     height: 70px;
     line-height: 70px;
     font-size: 0.9em;
+    background-color: white;
 }
 
 .left-nav {
@@ -95,3 +117,42 @@ ul {
     margin-right: 1.8em;
 }
 
+/* jumbotron */
+
+.jumbo {
+    width: 100%;
+    /* height: 500px; */
+    padding-top: 6em; 
+    background-color: var(--light-blue);
+}
+
+.jumbo-text > p {
+    margin-bottom: 1.7em;
+    line-height: 1.4em;
+}
+.jumbo-text > a {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+.jumbo-text a + p{
+    font-size: 0.7em;
+}
+.fas.fa-arrow-down {
+    font-size: 2em;
+}
+
+.jumbo-text.col {
+    width: 30%;
+    /* height: 500px; */
+}
+
+.jumbo-img.col {
+    width: 70%;
+    /* height: 500px; */
+}
+
+.jumbo-img > img {
+    width: 80%;
+    transform-origin: top left;
+    transform: scale(1.2);
+}
