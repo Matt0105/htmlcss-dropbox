@@ -52,12 +52,12 @@ h1 {
     float: left;
 }
 
-.cont-90 {
-    width: 90%;
-    margin: 0 auto;
-}
 .cont-80 {
     width: 80%;
+    margin: 0 auto;
+}
+.cont-70 {
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -121,8 +121,7 @@ h1 {
 
 .jumbo {
     width: 100%;
-    /* height: 500px; */
-    padding-top: 6em; 
+    padding-top: 8em; 
     background-color: var(--light-blue);
 }
 
@@ -143,16 +142,44 @@ h1 {
 
 .jumbo-text.col {
     width: 30%;
-    /* height: 500px; */
 }
 
 .jumbo-img.col {
     width: 70%;
-    /* height: 500px; */
 }
 
 .jumbo-img > img {
     width: 80%;
     transform-origin: top left;
     transform: scale(1.2);
+}
+
+/* Layout prezzi */
+
+.main-content-container {
+    margin-top: 150px;
+    background-color: yellow;
+}
+
+.price-layout {
+    width: 100%;
+    background-color: yellowgreen;
+}
+
+.price-header {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+
+.price-plan {
+    width: calc(100% / 3);
+    height: 500px;
+    background-color: violet;
+}
+
+.price-footer {
+    width: 100%;
+    height: 100px;
+    background-color: turquoise;
 }
