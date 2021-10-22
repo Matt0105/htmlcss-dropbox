@@ -16,6 +16,7 @@ html {
 /* variabili colori */
 :root {
     --light-blue: #b4d0e7;
+    --dark-blue: #0061ff;
 }
 
 .clearfix::after {
@@ -39,19 +40,32 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+.section-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.sub-title {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
 .btn {
     padding: 5px 15px;
 }
 
 .blue-btn {
     color: white;
-    background-color: #0061ff;
+    background-color: var(--dark-blue);
 }
 
 .col {
     float: left;
 }
 
+.cont-90 {
+    width: 90%;
+    margin: 0 auto;
+}
 .cont-80 {
     width: 80%;
     margin: 0 auto;
@@ -158,28 +172,90 @@ h1 {
 
 .main-content-container {
     margin-top: 150px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
+/* Layout header */
 .price-layout {
     width: 100%;
-    background-color: yellowgreen;
 }
 
 .price-header {
     width: 100%;
-    height: 100px;
-    background-color: red;
+}
+.price-header ul > li {
+    display: inline-block;
+    margin-right: 1em;
 }
 
+.circle {
+    display: inline-block;
+    height: 0.8em;
+    width: 0.8em;
+    border: 1px solid grey;
+    border-radius: 100%;
+}
+.cheked {
+    border: 3px solid var(--dark-blue)
+}
+
+/* Layout colonne piani prezzi */
+
+.price-plan-content {
+    margin-top: 1em;
+}
 .price-plan {
     width: calc(100% / 3);
-    height: 500px;
-    background-color: violet;
+    margin-top: 2em;
+    border: 1px solid lightgrey;
 }
+
+.price-plan-header {
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.1em;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+.price-desc {
+    display: block;
+    font-size: 0.7em;
+    color: gray;
+}
+
+.price-benefit {
+    margin: 2em 0;
+}
+.price-benefit > li {
+    margin: 1em 0;
+}
+
+.price-plan .price-plan-content .btn.blue-btn {
+    display: block;
+    text-align: center;
+}
+
+.info-link {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+.price-plan .price-plan-content a + span{
+    display: inline-block;
+    line-height: 60px;
+    border-bottom: 1px solid lightgray;
+}
+
+.bottom-price-benefit-title {
+    margin-top: 2em;
+}
+
+.fas.fa-check {
+    color: var(--dark-blue);
+}
+
 
 .price-footer {
     width: 100%;
-    height: 100px;
-    background-color: turquoise;
 }
