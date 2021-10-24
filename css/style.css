@@ -5,12 +5,13 @@
 }
 
 body {
-    min-width: 1200px;
+    /* min-width: 1200px; */
 }
 
 html {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* variabili colori */
@@ -46,7 +47,7 @@ h1 {
 }
 .sub-title {
     font-size: 1.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .btn {
@@ -56,6 +57,10 @@ h1 {
 .blue-btn {
     color: white;
     background-color: var(--dark-blue);
+}
+.white-btn {
+    border: 1px solid black;
+    color: black;
 }
 
 .col {
@@ -153,7 +158,9 @@ h1 {
 }
 .fas.fa-arrow-down {
     font-size: 2em;
+    color: black;
 }
+
 
 .jumbo-text.col {
     width: 30%;
@@ -206,15 +213,14 @@ h1 {
     margin-top: 1em;
 }
 .price-plan {
-    /* width: calc(100% / 3 - 14px); */
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 80px) / 3);
     height: 900px;
     margin-top: 2em;
     border: 1px solid lightgrey;
 }
 .margin-col {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .price-plan-header {
@@ -264,5 +270,132 @@ h1 {
 
 
 .price-footer {
+    margin-top: 40px;
     width: 100%;
+    border: 1px solid lightgrey;
+}
+
+.footer-header {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    line-height: 2em;
+}
+
+.footer-container .sub-title {
+    margin-top: 1em;    /*margin top su h3 standardizzabile*/
+}
+.footer-container > h4 {
+    margin-bottom: 1.5em;
+}
+.footer-container > p {
+    margin-bottom: 1em;
+}
+.footer-container > .btn.blue-btn {
+    float: right;
+}
+
+/* partner section */
+
+.partner-section {
+    margin-top: 100px;
+}
+
+.partner-img.col {
+    width: 60%;
+}
+
+.partner-img > img {
+    width: 100%;
+}
+
+.partner-desc {
+    width: 40%;
+    padding: 2em 0 0 2em;
+}
+.partner-desc .sub-title {
+    margin-bottom: 1.3em;
+}
+.partner-desc > p {
+    line-height: 1.8em;
+    margin-bottom: 1.3em;
+}
+
+/* operations */
+
+.operations {
+    margin-top: 100px;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+.row-item {
+    width: calc((100% - 80px) / 3);
+    height: 100%;
+}
+
+.operation-img {
+    width: 100%;
+    height: 50%;
+}
+.operation-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.operation-desc {
+    width: 100%;
+    height: 50%;
+}
+
+.operation-desc p > span {
+    text-decoration: underline;
+}
+.operation-desc .sub-title {
+    margin-bottom: 0.8em;
+}
+
+.operations .row:last-child {
+    margin-bottom: 150px;
+}
+
+.main-content-container .sub-title.last{
+    width: 50%;
+}
+
+/* team section */
+
+.drop-team-container {
+    width: 100%;
+    background-color: aqua;
+}
+
+.drop-team {
+    width: 100%;
+    height: 60%;
+    background-color: blue;
+}
+
+.team-sx, 
+.team-dx {
+    height: 100%;
+    width: 30vw;
+    background-color: blueviolet;
+}
+
+.team-desc {
+    width: 40vw;
+    height: 30vw;
+    background-color: brown;
+}
+
+
+.square {
+    height: 15vw;
+    width: 15vw;
+    background-color: chartreuse;
+    border: 1px solid black;
 }

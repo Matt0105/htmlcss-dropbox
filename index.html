@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Dropbox</title>
 </head>
 <body>
     
-    <header class="drop-header">
+    <header id="start" class="drop-header">
 
         <!-- inizio navbar -->
         <nav class="navbar clearfix">
             <div class="left-nav col">
 
                 <div class="logo-container">
-                    <img class="drop-logo" src="img/logo-small.png" alt="">
+                    <a href="#start"><img class="drop-logo" src="img/logo-small.png" alt=""></a> 
                 </div>
 
                 <ul class="nav-link-list">
@@ -60,7 +60,7 @@
 
                     <a class="btn blue-btn" href="">Inizia la tua prova gratuita</a>
                     <p>Annulla in qualsiasi momento</p>
-                    <span><i class="fas fa-arrow-down"></i></span>
+                    <a href="#price"><i class="fas fa-arrow-down"></i></a> 
                 </div>
 
                 <div class="jumbo-img col">
@@ -79,7 +79,7 @@
             <div class="price-layout">
 
                 <!-- header layout prezzi -->
-                <div class="price-header">
+                <div id="price" class="price-header">
                     <h2 class="section-title">Trova il piano Dropbox Business che fa per te</h2>
                     <ul>
                         <li><span class="circle cheked"></span> Fatturazione mensile</li>
@@ -133,7 +133,7 @@
                     <div class="price-plan col margin-col">
 
                         <div class="price-plan-header">
-                            <span class="price-plan-label"><i class="fas fa-users"></i> Singolo</span>
+                            <span class="price-plan-label"><i class="fas fa-users"></i> Team</span>
                         </div>
 
                         <div class="price-plan-content cont-90">
@@ -171,7 +171,7 @@
                     <div class="price-plan col">
 
                         <div class="price-plan-header">
-                            <span class="price-plan-label"><i class="fas fa-users"></i> Singolo</span>
+                            <span class="price-plan-label"><i class="fas fa-users"></i> Team</span>
                         </div>
 
                         <div class="price-plan-content cont-90">
@@ -205,20 +205,141 @@
                     </div>
                     <!-- /terza colonna prezzi -->
                     
-
-                    
                 </div>
                 <!-- /colonne piano prezzi -->
 
+                <div class="price-footer">
+                    <div class="footer-header">
+                        <span class="price-plan-label"><i class="fas fa-users"></i> Team</span>
+                    </div>
 
-                <div class="price-footer"></div>
+                    <div class="footer-container cont-90">
+                        <a class="btn blue-btn" href="">Contatta l'ufficio vendite</a>
+                        <h3 class="sub-title">Enterprise</h3>
+                        <h4>Contatta l'ufficio vendite per i prezzi</h4>
+                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
+                    </div>
+                </div>
                 
             </div>
 
+            <!-- sezione partner -->
+            <section class="partner-section clearfix">
 
+                <div class="partner-img col">
+                    <img src="img/partner.png" alt="">
+                </div>
+
+                <div class="partner-desc col">
+                    <h3 class="sub-title">Entra in contatto con un partner Dropbox</h3>
+                    <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                    <a class="btn white-btn" href="">Trova un partner</a>
+                </div>
+
+            </section>
+            <!-- /sezione partner -->
+            
+            <!-- sezione operations -->
+            <section class="operations">
+
+                <h2 class="section-title">Esegui pi&uacute; operazioni con Dropbox Business</h2>
+
+                <div class="row clearfix">
+                    <div class="row-item col">
+                        <div class="operation-img">
+                           <img src="img/business-feature-switching-tools.png" alt="">
+                        </div>
+                        <div class="operation-desc">
+                            <h3 class="sub-title">
+                                Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attivit&agrave; quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <span>Dropbox Paper</span> direttamente da Dropbox</p>
+                        </div>
+                    </div>
+
+                    <div class="row-item col margin-col">
+                        <div class="operation-img">
+                           <img src="img/business-feature-coordinate-it.png" alt="">
+                        </div>
+                        <div class="operation-desc">
+                            <h3 class="sub-title">
+                                Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attivit&agrave; quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <span>Dropbox Paper</span> direttamente da Dropbox</p>
+                        </div>
+                    </div>
+
+                    <div class="row-item col">
+                        <div class="operation-img">
+                           <img src="img/business-feature-multi-device.png" alt="">
+                        </div>
+                        <div class="operation-desc">
+                            <h3 class="sub-title">
+                                Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attivit&agrave; quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <span>Dropbox Paper</span> direttamente da Dropbox</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row clearfix">
+                    <div class="row-item col">
+                        <div class="operation-img">
+                           <img src="img/business-feature-integrations-it.png" alt="">
+                        </div>
+                        <div class="operation-desc">
+                            <h3 class="sub-title">
+                                Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attivit&agrave; quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <span>Dropbox Paper</span> direttamente da Dropbox</p>
+                        </div>
+                    </div>
+
+                    <div class="row-item col margin-col">
+                        <div class="operation-img">
+                           <img src="img/business-feature-send-files-it.png" alt="">
+                        </div>
+                        <div class="operation-desc">
+                            <h3 class="sub-title">
+                                Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attivit&agrave; quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <span>Dropbox Paper</span> direttamente da Dropbox</p>
+                        </div>
+                    </div>
+
+                    <div class="row-item col">
+                        <div class="operation-img">
+                           <img src="img/business-feature-security.png" alt="">
+                        </div>
+                        <div class="operation-desc">
+                            <h3 class="sub-title">
+                                Passa di meno da uno strumento all'altro</h3>
+                            <p>Porta a termine le attivit&agrave; quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <span>Dropbox Paper</span> direttamente da Dropbox</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <!-- /sezione operations -->
+
+            <h3 class="sub-title last">Pi&uacute; di 500.000 team utilizzano Dropbox Business</h3>
+            <a class="info-link" href="">Scopri di pi&uacute; sui nostri clienti</a>
         </div>
 
-        
+        <section class="drop-team-container">
+            <div class="drop-team clearfix">
+                <div class="team-sx col">
+                    <div class="square col"></div>
+                    <div class="square col"></div>
+                    <div class="square col"></div>
+                    <div class="square col"></div>
+                </div>
+                <div class="team-desc col"></div>
+                <div class="team-dx col">
+                    <div class="square col"></div>
+                    <div class="square col"></div>
+                    <div class="square col"></div>
+                    <div class="square col"></div>
+                </div>
+            </div>
+            <div class="call-to-action"></div>
+        </section>
 
     </main>
 
