@@ -467,7 +467,7 @@ h1 {
 /* FAQ */
 
 .faq {
-    margin-top: 5em;
+    margin: 5em 0;
 }
 .faq-container .sub-title {
     margin-bottom: 2em;
@@ -486,4 +486,43 @@ h1 {
 }
 .question > span {
     float: right;
+}
+
+/* footer */
+
+.drop-footer {
+    color: white;
+    background-color: black;
+}
+
+.footer-container {
+    padding-top: 4em;
+    margin-bottom: 3em;
+}
+
+.footer-menu {
+    width: 20%;
+}
+.footer-menu h4 {
+    margin-bottom: 1em;
+}
+.footer-menu ul > li{
+    margin-bottom: 0.3em;
+}
+.footer-menu ul li > a {
+    color: white;
+    font-size: 0.8em;
+}
+
+.footer-bottom-container > hr {
+    width: 10%;
+    border-top: 1px solid lightgrey;
+    margin-bottom: 1.5em;
+}
+.footer-bottom-container > span {
+    font-size: 0.7em;
+}
+
+.footer-bottom-container {
+    padding-bottom: 1.5em;
 }
