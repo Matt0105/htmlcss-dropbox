@@ -219,16 +219,10 @@ h1 {
 
 .price-plan-content {
     margin-top: 1em;
-    /* height: 100%; */
-}
-
-.price-plan-container {
 }
 
 .price-plan {
     width: calc((100% - 80px) / 3);
-    /* height: 900px; */
-    /* height: 100%; */
     margin-top: 2em;
     border: 1px solid lightgrey;
 }
@@ -258,6 +252,12 @@ h1 {
 }
 .price-benefit li > span {
     display: inline-block;
+}
+.price-benefit li:last-child {
+    padding-bottom: 4em;
+}
+.price-benefit .hidden {
+    visibility: hidden;
 }
 .price-benefit .col {
     width: 90%;
@@ -508,6 +508,25 @@ h1 {
 }
 .question > span {
     float: right;
+}
+.question > p {
+    margin-top: 3em;
+    width: 80%;
+    color: grey;
+
+    display: none;
+}
+.question:hover p {
+    display: inline-block;
+}
+.question .fas.fa-chevron-up {
+    display: none;
+}
+.question:hover .fas.fa-chevron-down {
+    display: none;
+}
+.question:hover .fas.fa-chevron-up {
+    display: inline;
 }
 
 /* footer */
