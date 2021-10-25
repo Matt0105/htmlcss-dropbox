@@ -5,7 +5,7 @@
 }
 
 body {
-    /* min-width: 1200px; */
+    min-width: 1200px;
 }
 
 html {
@@ -434,7 +434,7 @@ h1 {
 }
 
 .team-desc {
-    width: 40vw;
+    width: calc(100% - 60vw);
     height: 30vw;
     overflow: auto;
     background-color: #F5F5F5;
