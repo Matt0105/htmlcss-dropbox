@@ -400,7 +400,6 @@ h1 {
     width: 40vw;
     height: 30vw;
     overflow: auto;
-    overflow: scroll;
     background-color: #F5F5F5;
 }
 .team-desc hr {
