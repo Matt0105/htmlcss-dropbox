@@ -463,3 +463,27 @@ h1 {
     float: right;
     border: none;
 }
+
+/* FAQ */
+
+.faq {
+    margin-top: 5em;
+}
+.faq-container .sub-title {
+    margin-bottom: 2em;
+}
+
+.question {
+    border-top: 1px solid lightgrey;
+    padding: 2em 0;
+    cursor: pointer;
+}
+.faq-container .question:last-child {
+    border-bottom: 1px solid lightgrey;
+}
+.question > h4 {
+    float: left;
+}
+.question > span {
+    float: right;
+}
