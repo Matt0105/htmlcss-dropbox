@@ -20,11 +20,10 @@ html {
     --dark-blue: #0061ff;
 }
 
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
-}
+
+
+
+
 
 /* regole generali e comuni */
 
@@ -41,6 +40,12 @@ h1 {
     margin-bottom: 0.5em;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .section-title {
     font-size: 2em;
     margin-bottom: 1em;
@@ -53,7 +58,6 @@ h1 {
 .btn {
     padding: 5px 15px;
 }
-
 .blue-btn {
     color: white;
     background-color: var(--dark-blue);
@@ -83,6 +87,10 @@ h1 {
     width: 70%;
     margin: 0 auto;
 }
+
+
+
+
 
 
 /* header */
@@ -123,9 +131,9 @@ h1 {
     position: absolute;
     top: 74px;
     right: 250px;
-    text-align: left;
     padding: 1em 0;
     line-height: 2.5em;
+    text-align: left;
     background-color: #fffdfd;
 
     visibility: hidden;
@@ -156,7 +164,6 @@ h1 {
 .nav-link-list {
     display:inline-block;
 }
-
 .nav-link-list > li {
     display:inline-block;
     margin-right: 1.8em;
@@ -165,7 +172,6 @@ h1 {
     border-bottom: 3px solid grey;
     cursor: pointer;
 }
-
 .nav-link-list li a{
     color: black;
 }
@@ -189,12 +195,6 @@ h1 {
 .jumbo-text a + p{
     font-size: 0.7em;
 }
-.fas.fa-arrow-down {
-    font-size: 2em;
-    color: black;
-}
-
-
 .jumbo-text.col {
     width: 30%;
 }
@@ -202,21 +202,26 @@ h1 {
 .jumbo-img.col {
     width: 70%;
 }
-
 .jumbo-img > img {
     width: 80%;
     transform-origin: top left;
     transform: scale(1.2);
 }
 
+.fas.fa-arrow-down {
+    font-size: 2em;
+    color: black;
+}
+
+
 /* Layout prezzi */
 
 .main-content-container {
     margin-top: 150px;
-    /* background-color: yellow; */
 }
 
 /* Layout header */
+
 .price-layout {
     width: 100%;
 }
@@ -249,9 +254,11 @@ h1 {
 
 .price-plan {
     width: calc((100% - 80px) / 3);
+    min-height: 1000px;
     margin-top: 2em;
     border: 1px solid lightgrey;
 }
+
 .margin-col {
     margin-left: 40px;
     margin-right: 40px;
@@ -282,9 +289,6 @@ h1 {
 .price-benefit li:last-child {
     padding-bottom: 4em;
 }
-.price-benefit .hidden {
-    visibility: hidden;
-}
 .price-benefit .col {
     width: 90%;
     float: right;
@@ -314,7 +318,6 @@ h1 {
     color: var(--dark-blue);
 }
 
-
 .price-footer {
     margin-top: 40px;
     width: 100%;
@@ -327,10 +330,6 @@ h1 {
     line-height: 2em;
 }
 
-.footer-container .sub-title {
-    margin-top: 1em;    /*margin top su h3 standardizzabile*/
-    margin-top: 0;
-}
 .footer-container > h4 {
     margin-bottom: 1.5em;
 }
@@ -350,7 +349,6 @@ h1 {
 .partner-img.col {
     width: 60%;
 }
-
 .partner-img > img {
     width: 100%;
 }
@@ -359,11 +357,9 @@ h1 {
     width: 40%;
     padding: 2em 0 0 2em;
 }
-.partner-desc .sub-title {
-    margin-bottom: 1.3em;
-}
 .partner-desc > p {
     line-height: 1.8em;
+    margin-top: 1.3em;
     margin-bottom: 1.3em;
 }
 
@@ -397,12 +393,8 @@ h1 {
     width: 100%;
     height: 50%;
 }
-
 .operation-desc p > span {
     text-decoration: underline;
-}
-.operation-desc .sub-title {
-    margin-bottom: 0.8em;
 }
 
 .operations .row:last-child {
@@ -444,6 +436,7 @@ h1 {
     margin-top: 1.8em;
     border-top: 2px solid lightgrey;
 }
+
 .team-desc-container > img {
     width: 30%;
 }
@@ -503,9 +496,9 @@ h1 {
 }
 .call-to-action .section-title {
     width: 50%;
-    color: #61082B;
     float: left;
     margin: 0;
+    color: #61082B;
 }
 .call-to-action .btn.white-btn {
     float: right;
@@ -517,17 +510,18 @@ h1 {
 .faq {
     margin: 5em 0;
 }
-.faq-container .sub-title {
-    margin-bottom: 2em;
+
+.faq-container .question:last-child {
+    border-bottom: 1px solid lightgrey;
+}
+.faq-container .first.question {
+    margin-top: 2.5em;
 }
 
 .question {
-    border-top: 1px solid lightgrey;
     padding: 2em 0;
+    border-top: 1px solid lightgrey;
     cursor: pointer;
-}
-.faq-container .question:last-child {
-    border-bottom: 1px solid lightgrey;
 }
 .question > h4 {
     float: left;
@@ -539,7 +533,6 @@ h1 {
     margin-top: 3em;
     width: 80%;
     color: grey;
-
     display: none;
 }
 .question:hover p {
@@ -558,8 +551,8 @@ h1 {
 /* footer */
 
 .drop-footer {
-    color: white;
     background-color: black;
+    color: white;
 }
 
 .footer-container {
@@ -593,7 +586,6 @@ h1 {
     font-size: 0.7em;
     cursor: pointer;
 }
-
 .footer-bottom-container {
     padding-bottom: 1.5em;
 }
